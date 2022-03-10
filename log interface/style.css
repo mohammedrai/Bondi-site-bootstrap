@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark_color: #19283f;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark_color);
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  background: var(--dark_color);
+  width: 350px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  padding: 50px;
+}
+form {
+  position: relative;
+  width: 100%;
+}
+.container h3 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.inputbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.inputbox span {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 0.75em;
+  border-left: 1px solid white;
+  padding-left: 5px;
+  line-height: 1em;
+}
+.inputbox .box {
+  display: flex;
+}
+.inputbox .box .icon {
+  position: relative;
+  min-width: 40px;
+  height: 40px;
+  background: #ff2c74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.15em;
+}
+.inputbox .box input {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 00.85em;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+.inputbox .box input[type="submit"] {
+  background: #1f83f2;
+  color: white;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+label {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+}
+label input {
+  margin-right: 5px;
+}
+.forget {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}

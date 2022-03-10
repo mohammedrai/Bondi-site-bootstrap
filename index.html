@@ -19,7 +19,7 @@
 
 <body>
     <!-- my is navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top" id="home">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
@@ -29,26 +29,27 @@
             <div class="collapse navbar-collapse pb-3 align-items-center" id="main">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+                        <a class="nav-link p-2 p-lg-3" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
+                        <a class="nav-link p-2 p-lg-3" href="#Portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3" href="#">About</a>
+                        <a class="nav-link p-2 p-lg-3" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2  p-lg-3" href="#">Contact</a>
+                        <a class="nav-link p-2  p-lg-3 " href="#Contact">Contact</a>
                     </li>
 
                 </ul>
                 <div class="search ps-3 pe-3">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <a href="#" class="btn rounded-pill rounded-md-1 main-btn mt-sm-1 mt-5 ">logain</a>
+                <a href="log interface/index.html"
+                    class="btn rounded-pill rounded-md-1 main-btn mt-sm-1 mt-5 Sbutton">logain</a>
             </div>
         </div>
     </nav>
@@ -57,13 +58,13 @@
         <div class="text-center ">
             <h1>Taste the Creativity</h1>
             <p class="fs-6 text-white-50 mb-5">We make awesome graphic and web design</p>
-            <a href="#" class="btn rounded-pill main-btn text-uppercase">logain</a>
+            <a href="log interface/index.html" class="btn rounded-pill main-btn text-uppercase Sbutton">logain</a>
         </div>
     </div>
     <!-- end landing  -->
     <!-- start reatures -->
     <div class="featuers text-center pt-5 pb-5">
-        <div class="container">
+        <div class=" container">
             <div class="main-title mt-5 mb-5 position-relative">
                 <img class="mb-5" src="images/title.png" alt="">
                 <h2>We are Good at </h2>
@@ -108,91 +109,111 @@
     </div>
     <!-- end reatures -->
     <!-- stert works -->
-    <div class="our-work text-center pt-5 pd-5">
-        <div class="container">
+    <div class="our-work text-center pt-5 pd-5" id="Services">
+        <div class=" container">
             <div class="main-title mt-5 mb-5 position-relative">
                 <img class="mb-5" src="images/title.png" alt="">
                 <h2>We Make This </h2>
                 <p class="text-black-50 text-uppercase">PREPARE TO BE AMAZED</p>
             </div>
             <ul class="list-unstyled d-flex justify-content-center mt-5 mb5">
-                <li class="active rounded-pill">all</li>
-                <li>Design</li>
-                <li>Code</li>
-                <li>Photo</li>
-                <li>App</li>
+                <li data-cat=".all" class="active rounded-pill">all</li>
+                <li data-cat=".Design">Design</li>
+                <li data-cat=".Code">Code</li>
+                <li data-cat=".Photo">Photo</li>
+                <li data-cat=".App">App</li>
             </ul>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="box mb-3 bg-white" data-work="Application">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
+                    <div class="box mb-3 bg-white " data-work="Application">
                         <img src="images/work-01.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Code">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-02.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Code">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-03.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all App">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-04.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all App">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-05.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-01.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Code">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-06.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Photo">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-08.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-07.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-08.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Photo">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-02.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Photo">
                     <div class="box mb-3 bg-white" data-work="Application">
                         <img src="images/work-07.jpg" class="img-gluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all App">
+                    <div class="box mb-3 bg-white" data-work="Application">
+                        <img src="images/work-05.jpg" class="img-gluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all App">
+                    <div class="box mb-3 bg-white" data-work="Application">
+                        <img src="images/work-02.jpg" class="img-gluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
+                    <div class="box mb-3 bg-white" data-work="Application">
+                        <img src="images/work-08.jpg" class="img-gluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-2 all Design">
+                    <div class="box mb-3 bg-white" data-work="Application">
+                        <img src="images/work-06.jpg" class="img-gluid" alt="">
                     </div>
                 </div>
 
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <a href="#" class="btn rounded-pill main-btn text-uppercase mb-5">I Want More</a>
+                <a href="#" class="btn rounded-pill main-btn text-uppercase mb-5 Sbutton">I Want More</a>
             </div>
         </div>
     </div>
     <!-- end works -->
     <!-- start STUFF -->
-    <div class="stuff">
+    <div class="stuff" id="About">
         <div class="container">
             <div class="main-title mt-5 mb-5 position-relative text-center pt-5">
                 <img class="mb-5" src="images/title.png" alt="">
@@ -212,7 +233,8 @@
                         <p class="text-black-50 fs-6">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
                             elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin
                             eget tortor risus. Donec sollicitudin molestie malesuada.</p>
-                        <a href="#" class="btn rounded-pill main-btn text-uppercase mb-md-5 mt-5">ordrer me one</a>
+                        <a href="#" class="btn rounded-pill main-btn text-uppercase mb-md-5 mt-5 Sbutton">ordrer me
+                            one</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -225,13 +247,13 @@
     </div>
     <!-- end STUFF -->
     <!-- start TEAM -->
-    <div class="team text-center pb-5 pt-5">
+    <div id="Portfolio" class="team text-center pb-5 pt-5">
         <div class="container pb-5 pt-5">
             <h2 class="fw-bold">Meet The Team</h2>
             <p class="text-black-50 mb-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget
                 tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec
                 sollicitudin molestie malesuada.</p>
-            <div class="row ">
+            <div class="row ga3 ">
                 <div class="col col-md-6 col-lg-3">
                     <div class="box bg-white">
                         <img class="img-fluid" src="images/team-1.png" alt="">
@@ -248,7 +270,7 @@
                         </blockquote>
                     </div>
                 </div>
-                <div class="col col-md-6 col-lg-3">
+                <div class="col col-md-6 col-lg-3 ">
                     <div class="box bg-white">
                         <img class="img-fluid" src="images/team-3.png" alt="">
                         <h4 class="p-3 text-light">Princess Leia</h4>
@@ -256,7 +278,7 @@
                             from now on you'll do as I tell you, okay?“</blockquote>
                     </div>
                 </div>
-                <div class="col col-md-6 col-lg-3">
+                <div class="col col-md-6 col-lg-3 ">
                     <div class="box bg-white">
                         <img class="img-fluid" src="images/team-4.png" alt="">
                         <h4 class="p-3 text-light">Yoda</h4>
@@ -273,20 +295,20 @@
     <div class="techs pt-5 pb-5 text-center  ">
         <div class="container">
             <div class="row align-items-center d-flex justify-content-center">
-                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-3">
-                    <img class="img-fluid" src="images/tech-1.png" alt="">
+                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-5">
+                    <img class="img-fluid mb-3 mb-md-1" src="images/tech-1.png" alt="">
                 </div>
-                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-3">
-                    <img class="img-fluid" src="images/tech-2.png" alt="">
+                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-5">
+                    <img class="img-fluid mb-3 mb-md-1" src="images/tech-2.png" alt="">
                 </div>
-                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-3">
-                    <img class="img-fluid" src="images/tech-3.png" alt="">
+                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-5">
+                    <img class="img-fluid mb-3 mb-md-1" src="images/tech-3.png" alt="">
                 </div>
-                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-3">
-                    <img class="img-fluid" src="images/tech-4.png" alt="">
+                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-5">
+                    <img class="img-fluid mb-3 mb-md-1" src="images/tech-4.png" alt="">
                 </div>
-                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-3">
-                    <img class="img-fluid" src="images/tech-1.png" alt="">
+                <div class="col-sm-2 col-md-4 col-lg-2 mt-3 mb-5">
+                    <img class="img-fluid mb-3 mb-md-1" src="images/tech-1.png" alt="">
                 </div>
 
             </div>
@@ -294,12 +316,12 @@
     </div>
     <!-- end tech -->
     <!-- start project -->
-    <div class="project text-center pt-5 pb-5 text-light">
+    <div id="Contact" class="project text-center pt-5 pb-5 text-light">
         <h2>Start Your Project Now</h2>
         <p class="text-white-50 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit earum mollitia
             architecto est qui illo.</p>
         <div class="d-flex justify-content-center mt-5 pb-5 pt-5">
-            <a href="#" class="btn rounded-pill main-btn text-uppercase">start project</a>
+            <a href="#" class="btn rounded-pill main-btn text-uppercase Sbutton">start project</a>
         </div>
     </div>
     <!-- end project -->
@@ -312,7 +334,7 @@
                 <p class="text-black-50 text-uppercase">NEW STORIES</p>
             </div>
             <div class="row mt-5 pt-5">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-2">
                     <div class="card">
                         <img src="images/blog-1.jpg" alt="it is blog" class="card-img-top">
                         <div class="card-body">
@@ -321,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-2">
                     <div class="card">
                         <img src="images/blog-2.jpg" alt="it is blog" class="card-img-top">
                         <div class="card-body">
@@ -330,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-2">
                     <div class="card">
                         <img src="images/blog-3.jpg" alt="it is blog" class="card-img-top">
                         <div class="card-body">
@@ -357,7 +379,7 @@
                         placeholder="Enter email Address" id="">
                 </div>
                 <div class="col-md-6 col-lg-2 mt-5 mt-sm-2">
-                    <input type="submit" value="subscribe" class="btn rounded-pill">
+                    <input type="submit" value="subscribe" class="btn rounded-pill Sbutton">
                 </div>
             </form>
         </div>
@@ -411,7 +433,9 @@
                         </h5>
                         <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone.We are waiting for
                             your call or message</p>
-                        <a href="#" class="btn rounded-pill main-btn w-100">mohammedrai@gmail.com</a>
+
+                        <a href="mailto:mohammed0531661@gmail.com"
+                            class="btn rounded-pill main-btn w-100 Sbutton Topbutton">mohammedrai@gmail.com</a>
                         <ul class="d-flex list-unstyled gap-5 p-5">
                             <li><a href="#"><i class="fa-brands fa-facebook facebook"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
@@ -430,6 +454,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/myEvents.js"></script>
 </body>
 
 </html>
